@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zack/github/googletest_example/calc.cpp
+calc.hpp
+/home/zack/github/googletest_example/calc.hpp
+
+/home/zack/github/googletest_example/calc.hpp
+
+/home/zack/github/googletest_example/calc_test.cpp
+gtest/gtest.h
+-
+calc.hpp
+/home/zack/github/googletest_example/calc.hpp
+
