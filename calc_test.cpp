@@ -44,7 +44,7 @@ TEST(CalcTest_none_skip, Add) {
    ASSERT_EQ(5, add(3, 2));
 }
 
-int main(int argc, char **argv) {
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
+// int main(int argc, char **argv) {
+//     testing::InitGoogleTest(&argc, argv);
+//     return RUN_ALL_TESTS();
+// }

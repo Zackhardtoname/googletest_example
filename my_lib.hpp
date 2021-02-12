@@ -31,6 +31,7 @@ public:
 
    void SetDate(int year, int month, int day);
 
+   std::string getDate();
 };
 
 #endif // CALC_HPP_

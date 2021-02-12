@@ -336,5 +336,11 @@ gtest/gtest.h
 my_lib.hpp
 /home/zack/github/googletest_example/my_lib.hpp
 
+/home/zack/github/googletest_example/my_lib.cpp
+string
+-
+my_lib.hpp
+/home/zack/github/googletest_example/my_lib.hpp
+
 /home/zack/github/googletest_example/my_lib.hpp
 

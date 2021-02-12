@@ -19,8 +19,7 @@ namespace {
       // The fixture ctor and SetUp are very similar: https://github.com/google/googletest/blob/master/docs/faq.md#should-i-use-the-constructordestructor-of-the-test-fixture-or-setupteardown-ctorvssetup
       DateTest() {
          std::cout << "fixture contructure called";
-         std::cout << " (" << date.getMYear() << "/" << date.getMMonth() << "/"
-                   << date.getMDay() << ")\n";
+         std::cout << " (" << date.getDate() << ")\n";
          // do some shared work
       }
 
@@ -30,8 +29,7 @@ namespace {
 
       ~DateTest() {
          std::cout << "fixture destructor called";
-         std::cout << " (" << date.getMYear() << "/" << date.getMMonth() << "/"
-                   << date.getMDay() << ")\n\n";
+         std::cout << " (" << date.getDate() << ")\n";
       }
 
       void TearDown() override {
@@ -54,7 +52,12 @@ TEST_F(DateTest, getYear) {
    ASSERT_EQ(date.getMYear(), expected_year);
 }
 
-int main(int argc, char **argv) {
-   testing::InitGoogleTest(&argc, argv);
-   return RUN_ALL_TESTS();
+// compare strings
+TEST_F(DateTest, getDate) {
+   std::string str_to_compare = "wrong date";
+   EXPECT_EQ(date.getDate(), str_to_compare) << "should fail";
+
+   char char_array_1[] = "random";
+   char char_array_2[] = "random";
+   ASSERT_STREQ(char_array_1, char_array_2) << "should succeed";
 }

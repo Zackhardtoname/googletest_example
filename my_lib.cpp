@@ -1,4 +1,5 @@
 // calc.cpp
+#include <string>
 #include "my_lib.hpp"
 
 int add(int op1, int op2) {
@@ -19,6 +20,11 @@ void Date::SetDate(int year, int month, int day) {
    m_month = month;
    m_day = day;
    m_year = year;
+}
+
+std::string Date::getDate() {
+   return std::to_string(getMYear()) + "/" + std::to_string(getMMonth()) + "/"
+                          + std::to_string(getMDay());
 }
 
 int Date::getMYear() const {
@@ -44,4 +50,3 @@ int Date::getMDay() const {
 void Date::setMDay(int mDay) {
    m_day = mDay;
 }
-
