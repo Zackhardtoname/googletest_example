@@ -7,11 +7,17 @@ set(CMAKE_CXX_STANDARD 20)
 add_subdirectory(lib/googletest)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-add_executable(Google_Tests_run
-        calc.hpp
-        calc.cpp
-        calc_test.cpp
+add_executable(calc_test calc_test.cpp
+        my_lib.hpp
+        my_lib.cpp
         )
 
-# 'Google_Tests_run' is the target name
-target_link_libraries(Google_Tests_run gtest gtest_main)
+target_link_libraries(calc_test gtest gtest_main)
+
+add_executable(date_test date_test.cpp
+        my_lib.hpp
+        my_lib.cpp
+        )
+
+target_link_libraries(date_test gtest gtest_main)
+

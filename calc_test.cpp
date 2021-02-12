@@ -1,6 +1,8 @@
 // calc_test.cpp
 #include <gtest/gtest.h>
-#include "calc.hpp"
+#include "my_lib.hpp"
+
+using testing::Eq;
 
 TEST(CalcTest, Add) {
     ASSERT_EQ(2, add(1, 1));

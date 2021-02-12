@@ -77,48 +77,33 @@ include CMakeFiles/Google_Tests_run.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Google_Tests_run.dir/flags.make
 
-CMakeFiles/Google_Tests_run.dir/calc.cpp.o: CMakeFiles/Google_Tests_run.dir/flags.make
-CMakeFiles/Google_Tests_run.dir/calc.cpp.o: ../calc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zack/github/googletest_example/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Google_Tests_run.dir/calc.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Google_Tests_run.dir/calc.cpp.o -c /home/zack/github/googletest_example/calc.cpp
+CMakeFiles/Google_Tests_run.dir/my_lib.cpp.o: CMakeFiles/Google_Tests_run.dir/flags.make
+CMakeFiles/Google_Tests_run.dir/my_lib.cpp.o: ../my_lib.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zack/github/googletest_example/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Google_Tests_run.dir/my_lib.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Google_Tests_run.dir/my_lib.cpp.o -c /home/zack/github/googletest_example/my_lib.cpp
 
-CMakeFiles/Google_Tests_run.dir/calc.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Google_Tests_run.dir/calc.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zack/github/googletest_example/calc.cpp > CMakeFiles/Google_Tests_run.dir/calc.cpp.i
+CMakeFiles/Google_Tests_run.dir/my_lib.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Google_Tests_run.dir/my_lib.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zack/github/googletest_example/my_lib.cpp > CMakeFiles/Google_Tests_run.dir/my_lib.cpp.i
 
-CMakeFiles/Google_Tests_run.dir/calc.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Google_Tests_run.dir/calc.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zack/github/googletest_example/calc.cpp -o CMakeFiles/Google_Tests_run.dir/calc.cpp.s
-
-CMakeFiles/Google_Tests_run.dir/calc_test.cpp.o: CMakeFiles/Google_Tests_run.dir/flags.make
-CMakeFiles/Google_Tests_run.dir/calc_test.cpp.o: ../calc_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zack/github/googletest_example/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Google_Tests_run.dir/calc_test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Google_Tests_run.dir/calc_test.cpp.o -c /home/zack/github/googletest_example/calc_test.cpp
-
-CMakeFiles/Google_Tests_run.dir/calc_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Google_Tests_run.dir/calc_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zack/github/googletest_example/calc_test.cpp > CMakeFiles/Google_Tests_run.dir/calc_test.cpp.i
-
-CMakeFiles/Google_Tests_run.dir/calc_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Google_Tests_run.dir/calc_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zack/github/googletest_example/calc_test.cpp -o CMakeFiles/Google_Tests_run.dir/calc_test.cpp.s
+CMakeFiles/Google_Tests_run.dir/my_lib.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Google_Tests_run.dir/my_lib.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zack/github/googletest_example/my_lib.cpp -o CMakeFiles/Google_Tests_run.dir/my_lib.cpp.s
 
 # Object files for target Google_Tests_run
 Google_Tests_run_OBJECTS = \
-"CMakeFiles/Google_Tests_run.dir/calc.cpp.o" \
-"CMakeFiles/Google_Tests_run.dir/calc_test.cpp.o"
+"CMakeFiles/Google_Tests_run.dir/my_lib.cpp.o"
 
 # External object files for target Google_Tests_run
 Google_Tests_run_EXTERNAL_OBJECTS =
 
-Google_Tests_run: CMakeFiles/Google_Tests_run.dir/calc.cpp.o
-Google_Tests_run: CMakeFiles/Google_Tests_run.dir/calc_test.cpp.o
+Google_Tests_run: CMakeFiles/Google_Tests_run.dir/my_lib.cpp.o
 Google_Tests_run: CMakeFiles/Google_Tests_run.dir/build.make
 Google_Tests_run: lib/libgtestd.a
 Google_Tests_run: lib/libgtest_maind.a
 Google_Tests_run: lib/libgtestd.a
 Google_Tests_run: CMakeFiles/Google_Tests_run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zack/github/googletest_example/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Google_Tests_run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zack/github/googletest_example/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Google_Tests_run"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Google_Tests_run.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
