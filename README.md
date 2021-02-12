@@ -1,8 +1,11 @@
 TODOs
 * GoogleMock
 * death test
+* Value-Parameterized Tests
 * investigate the GUI programs
 * profiling with Google's [Benchmark](https://github.com/google/benchmark)?
+* GitHub hooks (CD/CI)
+* Sanitizer Integration
 
 Qs
 * How to set google testsuit name for TEST_F?

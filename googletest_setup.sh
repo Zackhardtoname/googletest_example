@@ -15,5 +15,5 @@ sudo cp ./lib/libgtest.a ./lib/libgtest_main.a /usr/lib
 # To write a custom main function
 #g++ -o calc_test calc_test.cpp my_lib.cpp -lgtest -lpthread
 
-
 #./calc_test
+#./calc_test --help

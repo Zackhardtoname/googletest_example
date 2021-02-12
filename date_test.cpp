@@ -10,11 +10,8 @@ namespace {
       int expected_year = 2021;
       Date date{expected_year, 12, 30};
 
-      int incr_year() {
-         int new_year = date.getMYear() + 1;
-         date.setMYear(new_year);
-         return new_year;
-      }
+      const testing::TestInfo* const test_info =
+         testing::UnitTest::GetInstance()->current_test_info();
 
       // The fixture ctor and SetUp are very similar: https://github.com/google/googletest/blob/master/docs/faq.md#should-i-use-the-constructordestructor-of-the-test-fixture-or-setupteardown-ctorvssetup
       DateTest() {
@@ -34,6 +31,12 @@ namespace {
 
       void TearDown() override {
          std::cout << "TearDown called" << "\n";
+      }
+
+      int incr_year() {
+         int new_year = date.getMYear() + 1;
+         date.setMYear(new_year);
+         return new_year;
       }
    };
 }
@@ -60,4 +63,12 @@ TEST_F(DateTest, getDate) {
    char char_array_1[] = "random";
    char char_array_2[] = "random";
    ASSERT_STREQ(char_array_1, char_array_2) << "should succeed";
+
+   // can do case-insensitive, substring, prefix, suffix, and regular expression matching as well - see more in the official doc
+}
+
+TEST_F(DateTest, getTestName) {
+   printf("We are in test %s of test suite %s.\n",
+          test_info->name(),
+          test_info->test_suite_name());
 }

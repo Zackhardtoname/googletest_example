@@ -331,13 +331,9 @@ acxx_demangle.h
 -
 
 /home/zack/github/googletest_example/calc_test.cpp
-gtest/gtest.h
+cmath
 -
-my_lib.hpp
-/home/zack/github/googletest_example/my_lib.hpp
-
-/home/zack/github/googletest_example/my_lib.cpp
-string
+gtest/gtest.h
 -
 my_lib.hpp
 /home/zack/github/googletest_example/my_lib.hpp

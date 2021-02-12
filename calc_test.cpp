@@ -5,14 +5,14 @@
 using testing::Eq;
 
 TEST(CalcTest, Add) {
-    ASSERT_EQ(2, add(1, 1));
-    ASSERT_EQ(5, add(3, 2));
-    ASSERT_EQ(10, add(7, 3));
+   ASSERT_EQ(2, add(1, 1));
+   ASSERT_EQ(5, add(3, 2));
+   ASSERT_EQ(10, add(7, 3));
 }
 
 TEST(CalcTest, Sub) {
-    ASSERT_EQ(3, sub(5, 2));
-    ASSERT_EQ(-10, sub(5, 15));
+   ASSERT_EQ(3, sub(5, 2));
+   ASSERT_EQ(-10, sub(5, 15));
 }
 
 TEST(CalcTest_failure, Add) {
@@ -42,6 +42,17 @@ TEST(CalcTest_none_skip, Add) {
 
    ASSERT_EQ(440, add(1, 1)) << "should fail";
    ASSERT_EQ(5, add(3, 2));
+}
+
+
+TEST(Exception, throw_exception) {
+   ASSERT_ANY_THROW(1 + 1) << "Should fail";
+}
+
+TEST(Precision, mult) {
+   double v1 = 1.46031e-07;
+   double v2 = v1 + 1e-23;
+   ASSERT_DOUBLE_EQ(v1, v2);
 }
 
 // int main(int argc, char **argv) {
