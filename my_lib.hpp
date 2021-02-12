@@ -17,11 +17,20 @@ private:
 public:
    Date(int year, int month, int day);
 
+   int getMYear() const;
+
+   void setMYear(int mYear);
+
+   int getMMonth() const;
+
+   void setMMonth(int mMonth);
+
+   int getMDay() const;
+
+   void setMDay(int mDay);
+
    void SetDate(int year, int month, int day);
 
-   int getYear() { return m_year; }
-   int getMonth() { return m_month; }
-   int getDay()  { return m_day; }
 };
 
 #endif // CALC_HPP_

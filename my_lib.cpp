@@ -20,3 +20,28 @@ void Date::SetDate(int year, int month, int day) {
    m_day = day;
    m_year = year;
 }
+
+int Date::getMYear() const {
+   return m_year;
+}
+
+void Date::setMYear(int mYear) {
+   m_year = mYear;
+}
+
+int Date::getMMonth() const {
+   return m_month;
+}
+
+void Date::setMMonth(int mMonth) {
+   m_month = mMonth;
+}
+
+int Date::getMDay() const {
+   return m_day;
+}
+
+void Date::setMDay(int mDay) {
+   m_day = mDay;
+}
+
