@@ -16,14 +16,15 @@ TEST(CalcTest, Sub) {
 }
 
 TEST(CalcTest_failure, Add) {
-   ASSERT_EQ(440, add(1, 1)); // should fail
+   ASSERT_EQ(440, add(1, 1)) << "should fail";
    ASSERT_EQ(5, add(3, 2));
 }
 
 TEST(CalcTest_failure, Sub_expect) {
-   EXPECT_EQ(440, sub(1, 1)); // should fail
+   // use EXPECT_* when you want the test to continue to reveal more errors
+   EXPECT_EQ(440, sub(1, 1)) << "should fail";
    ASSERT_EQ(1, sub(3, 2));
-   EXPECT_EQ(440, sub(5, 1)); // should fail
+   EXPECT_EQ(440, sub(5, 1)) << "should fail";
 }
 
 TEST(CalcTest_skip, Add) {
@@ -31,7 +32,7 @@ TEST(CalcTest_skip, Add) {
       GTEST_SKIP_("skipped");
    }
 
-   ASSERT_EQ(440, add(1, 1)); // should fail
+   ASSERT_EQ(440, add(1, 1)) << "should fail";
 }
 
 TEST(CalcTest_none_skip, Add) {
@@ -39,7 +40,7 @@ TEST(CalcTest_none_skip, Add) {
       GTEST_SKIP_("skipped");
    }
 
-   ASSERT_EQ(440, add(1, 1)); // should fail
+   ASSERT_EQ(440, add(1, 1)) << "should fail";
    ASSERT_EQ(5, add(3, 2));
 }
 
