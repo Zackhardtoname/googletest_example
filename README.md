@@ -13,6 +13,7 @@
 
 # Qs
 * How to set google testsuit name for TEST_F?
+* what about private stuff?
 
 # Sources:
 * https://github.com/google/googletest/blob/master/docs/primer.md
