@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/googletest_example.dir/calc.cpp.o CMakeFiles/googletest_example.dir/calc_test.cpp.o  -o googletest_example 
